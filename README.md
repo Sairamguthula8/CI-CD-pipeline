@@ -50,7 +50,7 @@ java -version
 or
 
 Amazon Linux 2023 uses dnf instead of yum
-sudo dnf install java-17-amazon-corretto -y
+sudo dnf install java-11-amazon-corretto -y
 java -version
 ```
 
@@ -214,7 +214,7 @@ sudo -i
 amazon-linux-extras install java-openjdk11 -y
 [or]
 Amazon Linux 2023 uses dnf instead of yum
-sudo dnf install java-17-amazon-corretto -y
+sudo dnf install java-11-amazon-corretto -y
 java -version
 
 adduser sonarqube
