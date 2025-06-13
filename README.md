@@ -43,7 +43,8 @@ Install Java
 
 ```shell
 sudo yum update -y
-sudo amazon-linux-extras install java-openjdk11 -y
+sudo amazon-linux-extras enable java-openjdk11
+sudo yum install java-11-openjdk -y
 java -version
 ```
 
