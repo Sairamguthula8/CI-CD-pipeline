@@ -46,6 +46,12 @@ sudo yum update -y
 sudo amazon-linux-extras enable java-openjdk11
 sudo yum install java-11-openjdk -y
 java -version
+
+or
+
+Amazon Linux 2023 uses dnf instead of yum
+sudo dnf install java-17-amazon-corretto -y
+java -version
 ```
 
 Install Git
@@ -163,8 +169,8 @@ Wait for the Jenkins to be restarted.
 Checkout the repo and move to the directory
 
 ```
-git clone https://github.com/iamsaikishore/Project3---java-maven-sonar-argocd-k8s.git
-cd Project3---java-maven-sonar-argocd-k8s/sprint-boot-app
+git clone https://github.com/Sairamguthula8/CI-CD-pipeline.git
+cd CI-CD-pipeline/spring-boot-app
 ```
 
 Execute the Maven targets to generate the artifacts
@@ -206,6 +212,11 @@ Hurray !! Access the application on `http://<ec2-instance-public-ip-address>:801
 ```
 sudo -i
 amazon-linux-extras install java-openjdk11 -y
+[or]
+Amazon Linux 2023 uses dnf instead of yum
+sudo dnf install java-17-amazon-corretto -y
+java -version
+
 adduser sonarqube
 su - sonarqube
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.4.0.54424.zip
